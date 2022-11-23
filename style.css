@@ -16,19 +16,15 @@ header section {
   color: white;  
   background-color: #828486;
   text-decoration: none;
-  margin: 10px;
-  border: none;
-  height: 70px;
-  font-weight: bold
+  margin: 20px;
 }
 
 .link:hover {
-  color: #828486;
-  background-color: white;
+  color: white;  
 }
 
-main section {
-  background-image: url(/images/beagle-filhote.jpg);
+.inicio {
+  background-image: url(/images/beagle-filhote.jpeg);
   background-size: cover;
   background-position-x: center;
   color: white;
@@ -40,25 +36,77 @@ main section {
   text-align: center;
   padding: 5px;
   min-width: none;
+  color: white;
 }
 
-@media screen and (max-width: 500px) {
-  main section {
-    height: 300px;
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.racas {
+  border-radius: 100%;
+}
+
+.cards-div {
+  box-shadow: 0 4px 17px #0000004d;
+  padding: 10px 10px 20px;
+  border-radius: 15px;
+}
+
+.cards-div:hover{
+  box-shadow: 0 4px 17px black;
+}
+
+.link-button {
+  padding: 10px;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  background-color: #828486;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  color: white;  
+  background-color: #828486;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #828486;
+  padding: 20px 0px ;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    flex-direction: column;
+    margin-top: 20px;
   }
 
+  .inicio{
+  height: 600px;
+  }
+
+  .cards-div {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .header {
     flex-direction: column;
     height: 100%;
     padding-top: 10px;
-  }
-
-  .link {
-    height: 150%;
-  }
-
-  .link:hover {
-    color: white;  
-    background-color: #828486;
   }
 }
