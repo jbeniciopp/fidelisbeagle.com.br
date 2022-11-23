@@ -1,0 +1,64 @@
+.header {
+  margin: 0;
+  background-color: #828486;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+header section {
+  display: flex;
+}
+
+.link {
+  color: white;  
+  background-color: #828486;
+  text-decoration: none;
+  margin: 10px;
+  border: none;
+  height: 70px;
+  font-weight: bold
+}
+
+.link:hover {
+  color: #828486;
+  background-color: white;
+}
+
+main section {
+  background-image: url(/images/beagle-filhote.jpg);
+  background-size: cover;
+  background-position-x: center;
+  color: white;
+  height: 900px;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 5px;
+  min-width: none;
+}
+
+@media screen and (max-width: 500px) {
+  main section {
+    height: 300px;
+  }
+
+  .header {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10px;
+  }
+
+  .link {
+    height: 150%;
+  }
+
+  .link:hover {
+    color: white;  
+    background-color: #828486;
+  }
+}
