@@ -35,7 +35,6 @@ header section {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   padding: 5px;
-  min-width: none;
   color: white;
 }
 
@@ -46,20 +45,20 @@ header section {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.racas {
+.fotos {
   border-radius: 100%;
+  width: 250px;
+  margin: 50px;
+  transition: 500ms linear;
 }
 
-.cards-div {
-  box-shadow: 0 4px 17px #0000004d;
-  padding: 10px 10px 20px;
-  border-radius: 15px;
-}
-
-.cards-div:hover{
+.fotos:hover{
   box-shadow: 0 4px 17px black;
+  width: 350px;
+  border-radius: 10px;
 }
 
 .link-button {
@@ -69,11 +68,13 @@ header section {
   border: none;
   background-color: #828486;
   text-decoration: none;
+  transition: 100ms linear;
 }
 
 .link-button:hover {
   color: white;  
   background-color: #828486;
+  font-size: large;
 }
 
 footer {
@@ -87,26 +88,41 @@ h3 {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-  .cards {
-    flex-direction: column;
-    margin-top: 20px;
-  }
+h2 {
+  text-align: center;
+  margin: 20px;
+}
 
-  .inicio{
-  height: 600px;
-  }
+#Informações {
+  border-radius: 10px;
+}
 
-  .cards-div {
-    width: 300px;
-    margin-bottom: 20px;
-  }
+#Informações-2 {
+  text-align: center;
+  margin: 50px;
+}
+
+.Informações {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 550px) {
   .header {
     flex-direction: column;
-    height: 100%;
+    height: 150px;
     padding-top: 10px;
+  }
+
+  #Informações {
+    width: 350px;
   }
 }
