@@ -115,14 +115,43 @@ h2 {
   align-items: center;
 }
 
-@media screen and (max-width: 550px) {
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1050px) {
   .header {
     flex-direction: column;
+    padding: 40px;
+    height: 100px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
     height: 150px;
-    padding-top: 10px;
   }
 
   #Informações {
     width: 350px;
+  }
+
+  iframe {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .header {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .header {
+    height: 250px;
   }
 }
