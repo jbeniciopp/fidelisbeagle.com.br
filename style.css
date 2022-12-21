@@ -82,6 +82,7 @@ footer {
   color: white;
   background-color: #828486;
   padding: 20px 0px ;
+  border-top: solid white 1px;
 }
 
 h3 {
@@ -115,9 +116,8 @@ h2 {
   align-items: center;
 }
 
-iframe {
-  width: 400px;
-  height: 300px;
+#dicas {
+  background-color: #828486;
 }
 
 @media screen and (max-width: 1050px) {
