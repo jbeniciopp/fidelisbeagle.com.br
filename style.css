@@ -120,7 +120,12 @@ h2 {
   background-color: #828486;
 }
 
-@media screen and (max-width: 1050px) {
+#info-foto {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1150px) {
   .header {
     flex-direction: column;
     padding: 40px;
@@ -129,7 +134,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .header {
     height: 150px;
   }
@@ -138,20 +143,27 @@ h2 {
     width: 350px;
   }
 
-  iframe {
-    width: 200px;
-    height: 150px;
+  #info-foto {
+    width: 400px;
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 550px) {
   .header {
     height: 200px;
   }
+
+  #info-foto {
+    width: 200px;
+  }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 400px) {
   .header {
     height: 250px;
+  }
+
+  #info-foto {
+    width: 150px;
   }
 }
