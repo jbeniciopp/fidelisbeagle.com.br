@@ -125,18 +125,18 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .header {
     flex-direction: column;
     padding: 40px;
-    height: 100px;
+    height: 200px;
     line-height: 40px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .header {
-    height: 150px;
+    height: 100%;
   }
 
   #Informações {
@@ -146,23 +146,35 @@ h2 {
   #info-foto {
     width: 400px;
   }
+
+  nav {
+    display: flex;
+    color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 550px) {
-  .header {
-    height: 200px;
-  }
-
   #info-foto {
     width: 200px;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  .link-button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .inicio {
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .header {
-    height: 250px;
-  }
-
   #info-foto {
     width: 150px;
   }
